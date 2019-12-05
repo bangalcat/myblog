@@ -1,9 +1,7 @@
 ---
-layout: post
 title: 'SVN과 Git의 차이점'
 tags: 
     - git
-comments: true
 ---
 # SVN과 Git의 차이점
 

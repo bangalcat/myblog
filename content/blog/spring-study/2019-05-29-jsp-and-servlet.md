@@ -1,8 +1,7 @@
 ---
-layout: post
-title : JSP와 서블릿
-tags : [spring]
-comments: true
+title : 'JSP와 서블릿'
+tags :  
+    - spring
 ---
 # JSP와 서블릿
 

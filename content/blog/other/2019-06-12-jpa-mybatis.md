@@ -1,9 +1,7 @@
 ---
-layout: post
-published: false
-title:JPA와 Mybatis
+title: 'JPA와 Mybatis'
 ---
-## 영속성 (Persistence)
+# 영속성 (Persistence)
 
 - 데이터를 생성한 프로그램이 종료되더라도 사라지지 않는 데이터의 특성
 

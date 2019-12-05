@@ -1,6 +1,4 @@
 ---
-layout: post
-published: true
 title: '[Spring] Spring Properties'
 tags:
   - spring

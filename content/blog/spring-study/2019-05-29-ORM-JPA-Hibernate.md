@@ -1,8 +1,7 @@
 ---
-layout: post
-title : ORM과 JPA 그리고 Hibernate
-tags : [spring]
-comments: true
+title : 'ORM과 JPA 그리고 Hibernate'
+tags : 
+    - spring
 ---
 # ORM과 JPA 그리고 Hibernate
 

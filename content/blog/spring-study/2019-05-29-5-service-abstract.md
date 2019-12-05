@@ -1,11 +1,8 @@
 ---
-layout: post
 title: '[Spring] 토비 스프링 - 5장 서비스 추상화'
 tags:
   - spring
   - tobi
-comments: true
-published: true
 ---
 # 5장 서비스 추상화
 

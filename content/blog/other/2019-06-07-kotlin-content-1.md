@@ -1,8 +1,8 @@
 ---
-layout: post
-title: [kotlin] 코틀린 도입시 고려할 것들
+title: '[kotlin] 코틀린 도입시 고려할 것들'
 date: 2019-06-07
-tags: [kotlin]
+tags: 
+    - 'kotlin'
 ---
 
 

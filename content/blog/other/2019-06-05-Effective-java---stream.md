@@ -1,8 +1,9 @@
 ---
-layout: post
 title: '[Java] Effective java - stream'
 date: 2019-06-05
-tags:[java,stream]
+tags:
+    - java
+    - stream
 ---
 
 # Effective java 3rd - 일부 번역

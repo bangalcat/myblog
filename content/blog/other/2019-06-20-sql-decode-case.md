@@ -1,8 +1,9 @@
 ---
-layout : post
-title : [Oracle SQL] DECODE, CASE WHEN
+title : '[Oracle SQL] DECODE, CASE WHEN'
 date: 2019-06-20
-tags : [sql,oracle]
+tags : 
+	- sql
+	- oracle
 ---
 
 

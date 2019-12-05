@@ -1,9 +1,7 @@
 ---
-layout: post
 title: 'Git - Rebase'
 tags: 
     - git
-comments: true
 ---
 # Rebase
 

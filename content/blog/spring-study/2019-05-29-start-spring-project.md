@@ -1,11 +1,8 @@
 ---
-layout: post
 title: '[Spring] 토비 스프링 - 스프링 프로젝트 시작하기'
 tags:
   - spring
   - tobi
-comments: true
-published: true
 ---
 ## 애플리케이션 아키텍처
 

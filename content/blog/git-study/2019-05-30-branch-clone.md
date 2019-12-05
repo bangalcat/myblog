@@ -1,7 +1,5 @@
 ---
-layout: post
-published: true
-title: 특정 branch만 clone하는 방법
+title: '특정 branch만 clone하는 방법'
 tags:
     - git
 ---

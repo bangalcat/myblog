@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Git 개념 알아보기'
 tags: 
     - git

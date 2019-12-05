@@ -1,6 +1,4 @@
 ---
-layout: post
-published: true
 title: '[Java] Easy way to Create Date'
 ---
 ## Easy way to Create Date

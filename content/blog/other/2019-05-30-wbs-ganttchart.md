@@ -1,7 +1,5 @@
 ---
-layout: post
-publish : true
-title: Wbs와 Gantt 차트
+title: 'Wbs와 Gantt 차트'
 ---
 # WBS
 

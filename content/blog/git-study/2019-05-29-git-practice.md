@@ -1,9 +1,7 @@
 ---
-layout: post
 title: 'git 실습방법'
 tags: 
    - git
-comments: true
 ---
 
 ## Git을 협업에 제대로 활용하기 위한 연습

@@ -1,7 +1,6 @@
 ---
 layout: post
-title: [algorithm]네트워크 플로우
-published:false
+title: '[algorithm]네트워크 플로우'
 ---
 
 

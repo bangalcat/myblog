@@ -1,6 +1,4 @@
 ---
-layout: post
-published: true
 title: '[Git] git 작업의 취소'
 ---
 ## Git 작업의 취소

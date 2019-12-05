@@ -1,11 +1,8 @@
 ---
-layout: post
 title: '[Spring] 스프링 공부 정리'
 tags:
   - spring
   - tobi
-comments: true
-published: true
 ---
 # 스프링 공부 정리
 

@@ -1,7 +1,5 @@
 ---
-layout: post
-title: [algorithm] 기하 벡터
-published:false
+title: '[algorithm] 기하 벡터'
 ---
 
 

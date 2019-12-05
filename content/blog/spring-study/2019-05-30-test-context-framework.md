@@ -1,6 +1,4 @@
 ---
-layout: post
-published: true
 title: '[Spring] 15장 테스트 컨텍스트 프레임워크'
 tags:
   - spring

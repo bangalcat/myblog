@@ -1,10 +1,9 @@
 ---
-layout: post
-published: false
-title: 함수형 프로그래밍
-tags: [functional programming,programming paradigm]
+title: '함수형 프로그래밍'
+tags: 
+    - 'functional programming'
+    - 'programming paradigm'
 date: 2019-06-07
-subtitle: 함수형 프로그래밍 기본 개념
 ---
 
 

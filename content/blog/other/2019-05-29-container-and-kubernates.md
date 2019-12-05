@@ -1,7 +1,8 @@
 ---
-layout: post
-title: 컨테이너와 쿠버네티스 쉽게 이해하기 (작성중)
-tags: [k8s, kubernetes]
+title: '컨테이너와 쿠버네티스 쉽게 이해하기 (작성중)'
+tags: 
+    - k8s
+    - kubernetes
 comments: true
 ---
 # 컨테이너와 쿠버네티스 쉽게 이해하기 (작성중)
