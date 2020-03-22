@@ -1,5 +1,6 @@
 ---
 title: 'Wbs와 Gantt 차트'
+createdDate: '2019-08-06'
 ---
 # WBS
 

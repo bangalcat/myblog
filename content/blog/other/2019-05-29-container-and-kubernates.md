@@ -1,5 +1,6 @@
 ---
 title: '컨테이너와 쿠버네티스 쉽게 이해하기 (작성중)'
+createdDate: '2019-08-06'
 tags: 
     - k8s
     - kubernetes

@@ -1,5 +1,6 @@
 ---
 title: '[algorithm] 기하 벡터'
+createdDate: '2019-08-06'
 ---
 
 

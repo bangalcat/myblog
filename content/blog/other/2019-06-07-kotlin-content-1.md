@@ -1,17 +1,17 @@
 ---
 title: '[kotlin] 코틀린 도입시 고려할 것들'
-date: 2019-06-07
-tags: 
-    - 'kotlin'
+createdDate: '2019-06-07'
+updatedDate: '2019-06-07'
+tags:
+  - 'kotlin'
 ---
-
-
 
 # 코틀린 도입시 고려할 것들
 
 ## 개발 환경
 
 #### 버전 업데이트 시 변화가 크지 않음
+
 1.0 ~ 1.3의 문법, API 하위 호환
 
 #### 언어 주변 환경
@@ -28,7 +28,7 @@ Kotlin은 우선 IDE에 연동하기 위한 Intellij 용 플러그인을 Jetbrai
 
 프로젝트 빌드에 도입하는 것 또한 간단합니다.
 
-  `Android Studio > Tools > Kotlin > Configure Kotlin in Project`를 클릭하면 다이얼로그가 나와서, OK 버튼을 누르면  자동으로 설치합니다.
+`Android Studio > Tools > Kotlin > Configure Kotlin in Project`를 클릭하면 다이얼로그가 나와서, OK 버튼을 누르면 자동으로 설치합니다.
 
 #### 자바와의 연계 기능이 강력하다.
 
@@ -36,7 +36,7 @@ Kotlin은 우선 IDE에 연동하기 위한 Intellij 용 플러그인을 Jetbrai
 
 그 점에서 볼 때 Kotlin은 Java와의 연계 능력이 정말로 강력합니다. Scala나 Groovy와 마찬가지로 java 바이트코드로 컴파일되어 JVM 위에서 구동됩니다.
 
-언어 사양에서 우선 Java와의 연계가 중요시되고 있으며, 기존 Java 프로젝트에 Kotlin 소스를 섞어서 사용할 수 있도록 되어잇습니다. 또 Kotlin에서 자연스럽게 Java의 클래스나 메소드를 호출 가능합니다. 공식 사이트에서도  100% Interoperable with Java라고 나와있습니다.
+언어 사양에서 우선 Java와의 연계가 중요시되고 있으며, 기존 Java 프로젝트에 Kotlin 소스를 섞어서 사용할 수 있도록 되어잇습니다. 또 Kotlin에서 자연스럽게 Java의 클래스나 메소드를 호출 가능합니다. 공식 사이트에서도 100% Interoperable with Java라고 나와있습니다.
 
 ## 언어 특성
 
@@ -57,4 +57,3 @@ var s = "string"
 - 도구 지원 : 정적 타입을 활용하면 안전한 리팩토링이 가능하고, 도구는 정확한 코드 완성 기능을 제공하며 IDE의 다른 지원 기능도 더 잘 만들 수 있다.
 
 ### 자바와 성능을 비교하면?
-

@@ -1,5 +1,6 @@
 ---
 title: 'git 실습방법'
+createdDate: '2019-05-29'
 tags: 
    - git
 ---

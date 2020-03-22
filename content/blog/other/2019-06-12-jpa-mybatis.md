@@ -1,5 +1,6 @@
 ---
 title: 'JPA와 Mybatis'
+createdDate: '2019-08-06'
 ---
 # 영속성 (Persistence)
 

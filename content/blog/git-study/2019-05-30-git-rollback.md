@@ -1,5 +1,6 @@
 ---
 title: '[Git] git 작업의 취소'
+createdDate: '2019-05-29'
 ---
 ## Git 작업의 취소
 

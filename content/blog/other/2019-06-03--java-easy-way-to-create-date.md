@@ -1,5 +1,6 @@
 ---
 title: '[Java] Easy way to Create Date'
+createdDate: '2019-08-06'
 ---
 ## Easy way to Create Date
 

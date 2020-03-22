@@ -1,12 +1,11 @@
 ---
 title: '함수형 프로그래밍'
-tags: 
-    - 'functional programming'
-    - 'programming paradigm'
-date: 2019-06-07
+tags:
+  - 'functional programming'
+  - 'programming paradigm'
+createdDate: '2019-06-07'
+updatedDate: '2019-06-07'
 ---
-
-
 
 # 함수형 프로그래밍
 
@@ -21,8 +20,6 @@ date: 2019-06-07
 잠금(lock) 상태를 통해서 보호될 필요도 없고, CPU의 레지스터에 저장된느 캐시값과 관련된 가시성 문제를 일으키지도 않음
 
 동시성 프로그래밍의 문제를 멀티쓰레딩 구조물을 통해서 해결하는 것이 아닌 구조물의 필요성 자체를 제거하는 방식
-
-
 
 #### 명령형 프로그래밍과의 비교
 
@@ -44,7 +41,7 @@ date: 2019-06-07
 
 ### Haskell
 
-순수 함수형 프로그래밍 언어.  부수 효과(Side Effect)가 없음을 의미.
+순수 함수형 프로그래밍 언어. 부수 효과(Side Effect)가 없음을 의미.
 
 > 같은 입력에도 결과가 달라지는 것이 바로 부수효과
 
@@ -63,8 +60,6 @@ square = [x^2 | x <- [1..]]
 
 수학적 개념과 미묘하게 다름. 하스켈 어려움의 주요 원인.
 
-
-
 ## 함수형 프로그래밍 핵심 개념
 
 ### 순수 함수 pure functions
@@ -82,4 +77,3 @@ square = [x^2 | x <- [1..]]
 ### 상태 변화를 피하라 avoid mutating state
 
 ### 부작용을 피하라 avoid side effects
-

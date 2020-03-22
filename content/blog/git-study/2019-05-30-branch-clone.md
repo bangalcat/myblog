@@ -1,5 +1,6 @@
 ---
 title: '특정 branch만 clone하는 방법'
+createdDate: '2019-05-29'
 tags:
     - git
 ---

@@ -1,5 +1,6 @@
 ---
 title: 'SVN과 Git의 차이점'
+createdDate: '2019-05-29'
 tags: 
     - git
 ---

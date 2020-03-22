@@ -1,5 +1,6 @@
 ---
 title: 'Git 개념 알아보기'
+createdDate: '2019-05-29'
 tags: 
     - git
 comments: true
