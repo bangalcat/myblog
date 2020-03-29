@@ -25,6 +25,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 }
                 frontmatter {
                   tags
+                  public
                 }
               }
             }
@@ -37,7 +38,9 @@ exports.createPages = async ({ graphql, actions }) => {
       }
 
       // Create blog posts pages.
-      const posts = result.data.allMarkdownRemark.edges.map(p => p.node);
+      const posts = result.data.allMarkdownRemark.edges
+        .map(p => p.node)
+        .filter(node => node.frontmatter.public != false);
 
       posts
         // .filter(post => post.fields.slug.startsWith('/blog/'))

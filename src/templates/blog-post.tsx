@@ -1,21 +1,28 @@
 import { graphql, Link } from 'gatsby';
 import { ITemplateProps } from 'interfaces';
 import React from 'react';
+import { BlogPostBySlugQuery } from '../../graphql-types';
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import { rhythm, scale } from '../utils/typography';
 
-type BlogPostTemplateProps = ITemplateProps<{}>;
+type BlogPostTemplateProps = ITemplateProps<{
+  previous: any;
+  next: any;
+}> & {
+  data: BlogPostBySlugQuery;
+};
 
-function BlogPostTemplate(props): React.ReactElement {
-  const post = props.data.markdownRemark;
-  const siteTitle = props.data.site.siteMetadata.title;
-  const { previous, next } = props.pageContext;
+function BlogPostTemplate(props: BlogPostTemplateProps): React.ReactElement {
+  const { data, pageContext } = props;
+  const siteTitle = data.site?.siteMetadata?.title || '';
+  const post = data.markdownRemark;
+  const { previous, next } = pageContext;
 
   return (
     <Layout location={props.location} title={siteTitle}>
-      <SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
+      <SEO title={post?.frontmatter?.title || ''} description={post?.frontmatter?.description || post?.excerpt} />
       <article>
         <header>
           <h1
@@ -24,7 +31,7 @@ function BlogPostTemplate(props): React.ReactElement {
               marginBottom: 0,
             }}
           >
-            {post.frontmatter.title}
+            {post?.frontmatter?.title}
           </h1>
           <p
             style={{
@@ -33,10 +40,10 @@ function BlogPostTemplate(props): React.ReactElement {
               marginBottom: rhythm(1),
             }}
           >
-            {post.frontmatter.createdDate}
+            {post?.frontmatter?.createdDate}
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section dangerouslySetInnerHTML={{ __html: post?.html || '' }} />
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -93,6 +100,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         createdDate(formatString: "MMMM DD, YYYY")
+        updatedDate(formatString: "MMMM DD, YYYY")
         description
       }
     }

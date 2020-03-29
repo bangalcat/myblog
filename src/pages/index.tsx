@@ -1,45 +1,28 @@
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
+import { ITemplateProps } from 'interfaces';
 import React from 'react';
+import { BlogIndexQuery } from '../../graphql-types';
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
+import PostLink from '../components/PostLink';
 import SEO from '../components/Seo';
-import { rhythm } from '../utils/typography';
 
-function BlogIndex(props): React.ReactElement {
-  const { data } = props;
-  const siteTitle = data.site.siteMetadata.title;
+type BlogIndexProps = {
+  data: BlogIndexQuery;
+} & ITemplateProps<{}>;
+
+function BlogIndex(props: BlogIndexProps): React.ReactElement {
+  const { data, location } = props;
+  const siteTitle = data.site?.siteMetadata?.title || '';
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <Layout location={props.location} title={siteTitle}>
+    <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug;
-        return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.createdDate}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-        );
-      })}
+      {posts.map(({ node }, i) => (
+        <PostLink key={node?.fields?.slug || i} post={node} />
+      ))}
     </Layout>
   );
 }
@@ -47,7 +30,7 @@ function BlogIndex(props): React.ReactElement {
 export default BlogIndex;
 
 export const pageQuery = graphql`
-  query {
+  query BlogIndex {
     site {
       siteMetadata {
         title

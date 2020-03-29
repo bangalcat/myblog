@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import React, { ReactElement } from 'react';
-import { rhythm, scale } from '../utils/typography';
+import { rhythm } from '../utils/typography';
+import './Layout.css';
 
 export type LayoutProps = {
   location: {

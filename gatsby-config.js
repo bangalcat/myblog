@@ -3,13 +3,19 @@ module.exports = {
     title: `Walter's Tech Blog`,
     author: `Walter Seo`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://.netlify.com/`,
+    siteUrl: `https://devwalter.netlify.com/`,
     social: {
       twitter: ``,
     },
   },
   plugins: [
     `gatsby-plugin-typescript`,
+    {
+      resolve: 'gatsby-plugin-graphql-codegen',
+      options: {
+        documentPaths: ['./src/**/*.{ts,tsx}', './node_modules/gatsby-*/**/*.js'],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -117,13 +123,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Walter's Tech blog`,
+        short_name: `walterblog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/profile-pic.jpg`,
       },
     },
     `gatsby-plugin-offline`,
@@ -134,5 +140,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-styled-components`,
   ],
 };
